@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 300px;
+    border: 1px solid #999;
+    border-collapse: collapse;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.questions {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #999999b2;
+}
+
+.answers {
+    transition: 0.5s;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.container.active .answers {
+    max-height: 200px;
+}
